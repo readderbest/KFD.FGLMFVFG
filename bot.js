@@ -1476,7 +1476,9 @@ message.channel.send('**Game is Start now...!**').then(msg => {
  .setFooter(`${message.author.tag}`, message.author.avatarURL)
  
  
-         
+,ti={}  
+,spee={};
+
 msg.channel.send(embed).then(() => {
         message.channel.awaitMessages(filter, { maxMatches: 1, time: 15000, errors: ['time'] })
         .then((collected) => {
@@ -1495,9 +1497,9 @@ msg.channel.send(embed).then(() => {
     })
     spee[id] = (new Date).getTime()
 }
-});
+})//ما عندنا كود زي هذا صبر اجيبه
 
-
+//فيه شي ناقص بالكود معآك الملف اللي طلت منه الكود ؟؟؟ صبر
 client.on('ready', function(){	
     var ms = 40000 ;	
     var setGame = ['-inv','-help'];	
